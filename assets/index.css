@@ -5,11 +5,12 @@ body {
 }
 
 #background-base{
-    background-color: #fff2f8;
+    background-image: url("./images/background/background2.png");
+    background-size : 100% auto;
     display: flex;
     justify-content: center;
     width: 100%;
-    min-height: 100vh; /* full viewport height */   
+    min-height: 100vh; /* full viewport xheight */   
     padding-bottom: 10%;
 }
 
@@ -23,20 +24,20 @@ body {
 }
 
 #logo {
-    display: flex;
-    justify-content: center;
-    width: fit-content;
+    display: block;
+    text-align: center;
     margin: 5vw auto;
+    width: 60%;
     
 
     font-family: "Fredoka", sans-serif;
-    font-size: 80px;
+    font-size: clamp(40px, 9vw, 80px); /* auto-resize based on screen width */
     font-weight: 600;
     font-style: normal;
     font-variation-settings:
         "wdth" 100;
 
-    color: #fff2f8;
+    color: #fee7f2;
     text-shadow: 0 0 5px #212427;
 }
 
@@ -75,9 +76,6 @@ body {
     gap: 4vw;           
 }
 
-.subsection-1 {
-}
-
 #menu {
     display: block;
     border-radius: 20px;
@@ -95,17 +93,16 @@ body {
     border-radius: 20px;
 }
 
-#menu-bar-bg {
-    display: flex;
-    justify-content: start;
-}
-
 .menu-option {
     font-size: inherit;
     color:inherit;
     text-decoration: none;
     display: inline-flex;
-    padding: 0 10%;
+    padding: 0 20%
+}
+
+.menu-option:hover {
+    box-shadow: 0 0 5px #212427;
 }
 
 #TLC-img {
@@ -128,4 +125,33 @@ body {
     justify-content: start;
     align-items: start;
     height: fit-content;
+}
+
+#moodboard-section {
+    display: block;
+    margin: 40px auto;
+    border: 4px solid hotpink;
+}
+
+#moodboard-title {
+    text-align: center;
+}
+
+#moodboard {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    width: 90%;
+}
+
+#moodboard-col-1 {
+    width: 30%
+}
+
+#moodboard-col-2 {
+    width: 30%
+}
+
+#moodboard-col-3 {
+    width: 30%
 }
