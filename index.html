@@ -27,8 +27,9 @@
 						<div id="menu">
 
 							<div class="subsection-title">
-								<a class="menu-button" onclick="openMenuOption('Blog')">Blog</a>
-								<a class="menu-button" onclick="openMenuOption('Vlog')">Vlog</a>
+								<!-- tablink class for JS, not styling -->
+								<a class="menu-button tablink" onclick="openMenuOption(event, 'Blog')">Blog</a>
+								<a class="menu-button tablink" onclick="openMenuOption(event, 'Vlog')">Vlog</a>
 							</div>
 
 							<!-- What's hidden (Blog and Vlog), blog first shown-->
