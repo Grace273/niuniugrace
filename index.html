@@ -27,11 +27,21 @@
 						<div id="menu">
 
 							<div class="subsection-title">
-								<a class="menu-option" href="blog.html" target="_blank">Blog</a>
-								<a class="menu-option" href="vlog.html" target="_blank">Vlog</a>
+								<a class="menu-button" onclick="openMenuOption('Blog')">Blog</a>
+								<a class="menu-button" onclick="openMenuOption('Vlog')">Vlog</a>
 							</div>
-							
-							<img id="TLC-img" src="assets/images/TLC.png" width="100%" alt="TLC Seventeen Magazine Cover">
+
+							<!-- What's hidden (Blog and Vlog), blog first shown-->
+
+							<div id="Blog" class="menu-option">
+								<h2>My Blog!</h2>
+							</div>
+
+							<div id="Vlog" class="menu-option" style="display:none">
+								<h2>My VLOGS!</h2>
+							</div>
+				
+							<!-- <img id="TLC-img" src="assets/images/TLC.png" width="100%" alt="TLC Seventeen Magazine Cover"> -->
 							
 						</div>
 
@@ -40,7 +50,7 @@
 					</div>
 
 					<div id="about">
-						<div class="about-title">
+						<div class="subsection-title">
 							About
 						</div>
 						
@@ -85,6 +95,8 @@
 			</div>
 		</div>
 		
-		
+		<script src="assets/index.js"></script>
+
 	</body>
+	
 </html>
