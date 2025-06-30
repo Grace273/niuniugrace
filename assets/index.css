@@ -6,7 +6,7 @@ body {
 }
 
 .background-base{
-    background-image: url("./images/background/background2.png");
+    background-image: url("./images/backgrounds/site-bg.png");
     background-size : 100% auto;
     display: flex;
     justify-content: center;
@@ -41,12 +41,12 @@ body {
 
 .subsection-title {
     display: flex;
-    color: #e0e1e2;
+    color: #FFEEDB;
     background-color: hotpink;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 35px;
+    height: 40px;
     /* MAKE HEIGHT NOT A CONSTANT */
 }
 
@@ -54,6 +54,7 @@ body {
     color:#FFEEDB;
     margin: 2vw 2vw;
     font-size: 1rem;
+    line-height: 1.5
 }
 
 .section-1 {
@@ -76,9 +77,9 @@ body {
     display: block;
     border-radius: 20px;
     overflow: hidden;
-    height: fit-content;
+    height: 440px;
     box-shadow: 0 0 3px #212427;
-    background-color: coral;
+    background-color: #ff7f50;
 }
 
 #about {
@@ -130,7 +131,7 @@ body {
 #moodboard-section {
     display: block;
     margin: 40px auto;
-    border: 4px solid hotpink;
+    border: 4px solid #ff69b4;
 }
 
 #moodboard-title {
@@ -156,6 +157,33 @@ body {
     width: 30%
 }
 
+.Blog {
+
+}
+
+#Vlog-overlay {
+    display: block;
+    margin: 2rem auto;
+
+    overflow-y: scroll;
+    max-height: 260px;  
+    
+    width: 70%;
+    background-image: url("./images/backgrounds/vlog-bg.png");
+    border: 5px solid #FFEEDB;
+    border-radius: 20px;
+
+    padding: 25px 30px;
+
+    @media (width >= 80em) {
+        width: 80%;
+    }
+}
+
+#videos {
+    display: block;
+    padding-bottom: 2rem;
+}
 
 /* BLOG AND VLOG PAGES */
 
