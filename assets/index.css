@@ -2,7 +2,12 @@ body {
     margin: 0;
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#212427;
 
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 .background-base{
@@ -20,6 +25,8 @@ body {
     width: 100%;
     margin: 30px auto;
     background-color: #fafafa;
+    /* background-image: url("./images/crumpled-white-paper-texture-as-background-image-paper-design-with-copy-space-text-image-top-view-copy-empty-space-text_196938-3671.avif");
+    background-size: cover; */
     width: 75%;
     box-shadow: 0 0 20px #e0e1e2;
     min-height: 100vh;
@@ -84,14 +91,14 @@ body {
     overflow: hidden;
     height: 440px;
     box-shadow: 0 0 3px #212427;
-    background-color: #ff7f50;
+    background-color: oklch(73.224% 0.15697 40.516);
 }
 
 #about {
     flex: 0 1 80%;
     overflow: hidden;
     box-shadow: 0 0 3px #212427;
-    background-color: coral;
+    background-color: oklch(73.224% 0.15697 40.516);
     border-radius: 20px;
     min-width: 100px;
 }
@@ -134,7 +141,6 @@ body {
 }
 
 
-
 #moodboard-section {
     display: block;
     margin: 40px auto;
@@ -164,13 +170,10 @@ body {
     width: 30%
 }
 
-.Blog {
 
-}
+/* BLOG AND VLOG TABS ON MENU */
 
-/* VLOG TAB ON MENU */
-
-#vlog-overlay {
+.menu-overlay {
     display: block;
     overflow-y: scroll;
     max-height: 260px;
@@ -192,17 +195,67 @@ body {
     }
 }
 
-#vlog-section-title {
+.menu-overlay-title {
     color: #fee7f2;
     text-shadow: 0 0 5px #ff69b4;
     margin-top: 0;
 }
 
-#video-section {
+.menu-content-section {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
+
+/* BLOG TAB */
+
+.blog-post {
+    display: flex;
+    align-items: center;
+    background-image: url("./images/crumpled-white-paper-texture-as-background-image-paper-design-with-copy-space-text-image-top-view-copy-empty-space-text_196938-3671.avif");
+    background-size: cover;
+    border-radius: 5px;
+    box-shadow: 0 0 6px hotpink;
+    padding: 5px;
+}
+
+.blog-post:hover {
+    box-shadow: 0 0 15px coral;
+    cursor: pointer;
+}
+
+.blog-post-gif {
+    width: 20%;
+    height: 20%;
+    padding-right: 5vw;
+
+    @media (width >= 60em) {
+        width: 10%;
+        height: 10%;
+        padding-right: 1vw;
+    }
+}
+
+.blog-desc {
+    display: block;
+
+    @media (width >= 80em) {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.blog-desc p {
+    font-size: 12px;
+    color: #8a8a8a;
+
+    @media (width >= 80em) {
+        margin-left: 1vw;
+    }
+
+}
+
+/* VLOG TAB */
 
 .vlog-post {
     display: flex;
@@ -226,8 +279,8 @@ body {
 
 .thumbnail img:hover {
     box-shadow: 0 0 15px coral;
+    cursor: pointer;
 }
-
 
 .vlog-desc {
     display: flex;
@@ -250,6 +303,15 @@ body {
 
 /* BLOG PAGE */
 
+#blog-background-overlay {
+    height: 80vh;
+    min-height: unset;
+
+    @media (width >= 60em) {
+        height: 50vh;
+    }
+}
+
 #logo-site {
     display: block;
     width: 300px;
@@ -263,6 +325,7 @@ body {
     margin-left: 2vw;
 }
 
+/* NAV BAR */
 /* Style the list */
 .breadcrumb {
     list-style: none;
@@ -277,25 +340,66 @@ body {
 
 /* Display list items side by side */
 .breadcrumb li {
-  display: inline;
-  text-align: start;
+    display: inline;
+    text-align: start;
 }
 
 /* Add a slash symbol (/) before/behind each list item */
 .breadcrumb li+li:before {
-  padding: 8px;
-  color: #e0e1e2;
-  content: ">>";
+    padding: 8px;
+    color: #e0e1e2;
+    content: ">>";
 }
 
 /* Add a color to all links inside the list */
 .breadcrumb li a {
-  color: #1275cb;
-  text-decoration: none;
+    color: #1275cb;
+    text-decoration: none;
 }
 
 /* Add a color on mouse-over */
 .breadcrumb li a:hover {
-  color: #01447e;
-  text-decoration: underline;
+    color: #01447e;
+    text-decoration: underline;
+}
+
+#blog-page-content {
+    padding: 0 10px;
+    margin: 5%;
+    overflow-y: scroll;
+    height: 80%;
+    background-color: #e9e8e8;
+    box-shadow: 0px 0px 10px hotpink;
+
+    @media (width >= 60em) {
+        height: 95%;
+    }
+}
+
+.blog-page-post {
+    margin-bottom: 20px;
+}
+
+.blog-page-post p{
+    font-size: 14px;
+}
+
+.blog-page-title {
+    padding-left: 10px;
+    background-color: #fee7f2;
+    margin-bottom: 0;
+}
+
+.blog-page-entry {
+    margin-top: 10px;
+    padding-left: 10px;
+    border-left: 2px solid hotpink;
+}
+
+.blog-pics {
+    width: 90%;
+
+    @media (width >= 60em) {
+        width: 20%;
+    }
 }
