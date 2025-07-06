@@ -11,7 +11,8 @@ html {
 }
 
 .background-base{
-    background-image: url("./images/backgrounds/site-bg.png");
+    background-image: url("./images/backgrounds/water.jpeg");
+
     background-size : 100% auto;
     display: flex;
     justify-content: center;
@@ -24,16 +25,24 @@ html {
     display: block;
     width: 100%;
     margin: 30px auto;
-    background-color: #fafafa;
-    /* background-image: url("./images/crumpled-white-paper-texture-as-background-image-paper-design-with-copy-space-text-image-top-view-copy-empty-space-text_196938-3671.avif");
-    background-size: cover; */
-    width: 75%;
-    box-shadow: 0 0 20px #e0e1e2;
+
+    /* background-color: #fafafa; */
+
+    background-image: url("./images/backgrounds/site-bg.png");
+
+    /* background-size: cover; */
+
+    width: 80%;
+    box-shadow: 0 0 20px #afb3b7;
     min-height: 100vh;
     padding-bottom: 20%;
 
     font-size: 0.875rem;
     font-size: clamp(0.875rem, 0.715rem + 0.684vi, 1.125rem);
+
+    @media (width >= 80em) {
+        width: 60%;
+    }
 }
 
 #logo-homepage {
@@ -43,11 +52,28 @@ html {
     margin-bottom: 4.5vw;
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
+
+    text-decoration: none;
+    
+    font-family: "Fredoka", sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+
+    color: #fff7fb;
+    text-shadow: 0 0 5px hotpink;
+
 
     @media (width >= 80em) {
-        width: 60%;
+        font-size: 95px;
     }
+}
+
+#logo-homepage a, #logo-homepage a:visited {
+    text-decoration: none;
+    color: hsl(312, 100%, 99%);
 }
 
 .subsection-title {
@@ -91,7 +117,7 @@ html {
     overflow: hidden;
     height: 440px;
     box-shadow: 0 0 3px #212427;
-    background-color: oklch(73.224% 0.15697 40.516);
+    background-color: #f98256;
 }
 
 #about {
@@ -111,7 +137,7 @@ html {
     padding: 10px 20%;
     text-shadow: 0 0 3px #464b51;
     cursor: pointer;
-    background-color: hotpink;
+    background-color: #ff69b4;
     width: 100%;
 }
 
@@ -140,37 +166,6 @@ html {
     margin: 0 auto;
 }
 
-
-#moodboard-section {
-    display: block;
-    margin: 40px auto;
-    border: 4px solid #ff69b4;
-}
-
-#moodboard-title {
-    text-align: center;
-}
-
-#moodboard {
-    display: flex;
-    margin: 0 auto;
-    justify-content: space-between;
-    width: 90%;
-}
-
-#moodboard-col-1 {
-    width: 30%
-}
-
-#moodboard-col-2 {
-    width: 30%
-}
-
-#moodboard-col-3 {
-    width: 30%
-}
-
-
 /* BLOG AND VLOG TABS ON MENU */
 
 .menu-overlay {
@@ -182,7 +177,7 @@ html {
     margin: 2rem auto;
     padding: 5% 5%;
     
-    background-image: url("./images/backgrounds/vlog-bg.png");
+    background-image: url("./images/backgrounds/menu-content-bg.jpg");
     background-size: cover;
 
     border: 2px solid hotpink;
@@ -212,15 +207,15 @@ html {
 .blog-post {
     display: flex;
     align-items: center;
-    background-image: url("./images/crumpled-white-paper-texture-as-background-image-paper-design-with-copy-space-text-image-top-view-copy-empty-space-text_196938-3671.avif");
+    background-image: url("./images/backgrounds/log-post-bg.jpg");
     background-size: cover;
     border-radius: 5px;
-    box-shadow: 0 0 6px hotpink;
+    box-shadow: 0 0 2px hotpink;
     padding: 5px;
 }
 
 .blog-post:hover {
-    box-shadow: 0 0 15px coral;
+    box-shadow: 0 0 15px hotpink;
     cursor: pointer;
 }
 
@@ -260,7 +255,8 @@ html {
 .vlog-post {
     display: flex;
     gap: 1rem;
-    background-color: #d4d4d4;
+    background-image: url("./images/backgrounds/log-post-bg.jpg");
+    background-size: cover;
     border-radius: 10px;
 }
 
@@ -300,6 +296,35 @@ html {
     margin: 1.5vw 0;
 }
 
+/* Moodboard */
+#moodboard-section {
+    display: block;
+    margin: 40px auto;
+    /* border: 4px solid #ff69b4; */
+}
+
+#moodboard-title {
+    text-align: center;
+}
+
+#moodboard {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    width: 90%;
+}
+
+#moodboard-col-1 {
+    width: 30%
+}
+
+#moodboard-col-2 {
+    width: 30%
+}
+
+#moodboard-col-3 {
+    width: 30%
+}
 
 /* BLOG PAGE */
 
