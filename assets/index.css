@@ -11,7 +11,7 @@ html {
 }
 
 .background-base{
-    background-image: url("./images/backgrounds/water.jpeg");
+    background-image: url("./images/backgrounds/clear6.png");
 
     background-size : 100% auto;
     display: flex;
@@ -28,11 +28,11 @@ html {
 
     /* background-color: #fafafa; */
 
-    background-image: url("./images/backgrounds/site-bg.png");
+    background-image: url("./images/backgrounds/site-bg-phone.png");
 
     /* background-size: cover; */
 
-    width: 80%;
+    width: 400px;
     box-shadow: 0 0 20px #afb3b7;
     min-height: 100vh;
     padding-bottom: 20%;
@@ -40,8 +40,9 @@ html {
     font-size: 0.875rem;
     font-size: clamp(0.875rem, 0.715rem + 0.684vi, 1.125rem);
 
-    @media (width >= 80em) {
-        width: 60%;
+    @media (width >= 60em) {
+        width: 1050px;
+        background-image: url("./images/backgrounds/site-bg-laptop.png");
     }
 }
 
@@ -62,7 +63,7 @@ html {
     font-variation-settings:
         "wdth" 100;
 
-    color: #fff7fb;
+    color: hsl(312, 100%, 99%);
     text-shadow: 0 0 5px hotpink;
 
 
@@ -207,7 +208,7 @@ html {
 .blog-post {
     display: flex;
     align-items: center;
-    background-image: url("./images/backgrounds/log-post-bg.jpg");
+    background-image: url("./images/backgrounds/gridpaper.jpg");
     background-size: cover;
     border-radius: 5px;
     box-shadow: 0 0 2px hotpink;
@@ -255,7 +256,7 @@ html {
 .vlog-post {
     display: flex;
     gap: 1rem;
-    background-image: url("./images/backgrounds/log-post-bg.jpg");
+    background-image: url("./images/backgrounds/vlog-post-bg.jpg");
     background-size: cover;
     border-radius: 10px;
 }
@@ -348,6 +349,28 @@ html {
     margin-top: 3vw;
     margin-bottom: 2vw;
     margin-left: 2vw;
+
+    text-decoration: none;
+    
+    font-family: "Fredoka", sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+
+    color: hsl(312, 100%, 99%);
+    text-shadow: 0 0 5px rgb(185, 134, 160);
+
+
+    @media (width >= 80em) {
+        font-size: 95px;
+    }
+}
+
+#logo-site a, #site a:visited {
+    text-decoration: none;
+    color: hsl(312, 100%, 99%);
 }
 
 /* NAV BAR */
