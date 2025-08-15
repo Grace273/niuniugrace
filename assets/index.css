@@ -130,6 +130,21 @@ html {
     min-width: 100px;
 }
 
+#about-content {
+    display: flex;
+}
+
+#grace-name {
+    margin: 0 20px;
+}
+
+#site-intro {
+    margin-top: 20px;
+    margin-right: 20px;
+    color: #343434;
+    font-size: 13px;
+}
+
 .menu-button {
     font-size: inherit;
     color:inherit;
