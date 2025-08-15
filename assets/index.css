@@ -11,7 +11,7 @@ html {
 }
 
 .background-base{
-    background-image: url("./images/backgrounds/clear6.png");
+    background-image: url("./images/backgrounds/plaid1.jpg");
 
     background-size : 100% auto;
     display: flex;
@@ -259,10 +259,11 @@ html {
     background-image: url("./images/backgrounds/vlog-post-bg.jpg");
     background-size: cover;
     border-radius: 10px;
+
 }
 
 .thumbnail {
-    width: 45%;
+    width: 50%;
     height: fit-content;
 }
 .thumbnail img {
@@ -305,7 +306,13 @@ html {
 }
 
 #moodboard-title {
+    display:block;
+    margin: 20px auto;
+    justify-content: center;
     text-align: center;
+    width: 90%;
+    height: 50px;
+    background-image: url("./images/backgrounds/plaid1.jpg");
 }
 
 #moodboard {
