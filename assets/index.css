@@ -214,6 +214,12 @@ html {
     padding: 2px 10px;
 }
 
+#message-section p{
+    font-size: 10px;
+    color: #f98256;
+    margin-left: 2px;
+}
+
 /* BLOG AND VLOG TABS ON MENU */
 
 .menu-overlay {
