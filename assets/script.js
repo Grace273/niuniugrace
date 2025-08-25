@@ -12,16 +12,17 @@ const referenceInDB = ref(database, "messages")
 const sendButton = document.getElementById("send-btn")
 let confirmationEl = document.getElementById("confirmation-el")
 let inputEl = document.getElementById("input-el")
-let myMessages = []
+let numMessages = 0
 
 sendButton.addEventListener("click", function(){
-  if (myMessages.length === 100){
+  if (numMessages >= 100){
     confirmationEl.innerHTML = "Inbox full (100 messages). Try again later!"
   }
   else if(inputEl.value){
     confirmationEl.innerHTML = "Message sent!"
     push(referenceInDB, inputEl.value)
     inputEl.value = ""
+    numMessages += 1
   }
   else {
     confirmationEl.innerHTML = "Write something to send!"
