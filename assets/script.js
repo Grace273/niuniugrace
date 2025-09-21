@@ -30,7 +30,21 @@ sendButton.addEventListener("click", function(){
 })
 
 // VLOG/BLOG NAVIGATION 
+const blogButton = document.getElementById("Blog-btn");
+const vlogButton = document.getElementById("Vlog-btn");
+
+blogButton.addEventListener("click", function(event){
+  openMenuOption(event, "Blog")
+})
+
+vlogButton.addEventListener("click", function(event){
+  openMenuOption(event, "Vlog")
+})
+
+
 function openMenuOption(evt, menuOption) { 
+  // https://www.w3schools.com/w3css/w3css_tabulators.asp
+
   let i
   let x = document.getElementsByClassName("menu-option")
   let tablinks
